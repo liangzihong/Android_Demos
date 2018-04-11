@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/createTable"
+        android:onClick="onClick"
+        android:text="Create Table"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/addUser"
+        android:onClick="onClick"
+        android:text="Add User"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/deleteUser"
+        android:onClick="onClick"
+        android:text="Delete User"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/updateUser"
+        android:onClick="onClick"
+        android:text="Update User"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/queryUser"
+        android:onClick="onClick"
+        android:text="Query User"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Views.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:id="@+id/activitymain_swipeRefreshLayout">
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activitymain_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            <!--coordinatorLayout使得这个toolbar可以放在任何位置，并且可以进行缩回-->
+            <!--但如果你用的是其他  layout，就要把toolbar放在最上面才可以显示-->
+            <!--如何自定义toolbar就可以上官网，那里比较清晰-->
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/activitymain_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/><!--是否会顺着拉下去之后缩回--><!--如果要定义一个主题，可以从网上参考-->
+            </android.support.design.widget.AppBarLayout>
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

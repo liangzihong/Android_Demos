@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#529641">
+
+
+    <!--首先用的是 cardview，卡片式布局，看上去好像比较好看
+    其次， 在有文字和图片中，如何设置高度宽度是很讲究的
+    最外层 要是   match 和wrap
+    而 图片和文字  全部都是 wrapcontent
+    因为要让图片全部展示，一定要是wrapcontent-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/ganmeizhi_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:adjustViewBounds="true"/>
+
+
+        <TextView
+            android:id="@+id/ganmeizhi_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fuck you"/>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

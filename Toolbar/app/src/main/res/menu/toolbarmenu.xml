@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/firstItem"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="firstItem"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/secondItem"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="secondItem"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item
+        android:id="@+id/thirdItem"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="ThirdItem"
+        app:showAsAction="never">
+
+    </item>
+
+
+
+</menu>

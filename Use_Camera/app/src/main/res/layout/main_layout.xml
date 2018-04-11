@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入照片名字"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:textSize="10sp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="再拍一张"
+        android:textSize="10sp"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/FromAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从相册中挑选"
+        android:textSize="10sp"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>

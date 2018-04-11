@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="狗不理包子"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv1"
+        android:layout_toEndOf="@+id/iv1"
+        android:layout_alignTop="@+id/iv1" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="价格：20"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/iv1"
+        android:layout_toEndOf="@+id/iv1" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="又贵又不好吃"
+        android:layout_below="@+id/price"
+        android:layout_toEndOf="@+id/iv1" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
